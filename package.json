@@ -1,7 +1,7 @@
 
 {
-  "name": "ooga booga bot",
-  "description": "the best bot",
+  "name": "ooga_booga_bot",
+  "description": "the-best-bot",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
