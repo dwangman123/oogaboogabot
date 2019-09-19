@@ -1,25 +1,14 @@
+
 {
-  "name": "fuckme",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ooga booga bot",
+  "description": "the best bot",
+  "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js",
-    "dev": "nodemon bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "dotenv": "^8.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
-  },
-  "engines": {
-    "node": "10.16.3",
-    "npm": "*"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
