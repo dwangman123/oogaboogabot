@@ -13,7 +13,7 @@ client.on("message", (message) => {
     message.channel.send("Hi" + message.content.substring(message.content.toLowerCase().indexOf(" ", message.content.toLowerCase().indexOf("m"))) + ", I'm daddy");
   }
   if (message.content.toLowerCase()=="frank is") {
-  	message.channel.send("a Chinese immigrant by the name of Junchu \"Dark15Soul\" Yan who is currently trying to understand your English!");
+  	message.channel.send("trying to understand your English!");
   }
   if (message.content.toLowerCase()=="brendan is") {
   	message.channel.send("a cool, smart, funny, handsome, witty, mature, awesome guy");
