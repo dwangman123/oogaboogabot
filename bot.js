@@ -8,20 +8,19 @@ client.on('ready', () => {
 client.on("message", (message) => {
   var input=message.content.toLowerCase();
   if (message.author.bot) {return;}
-  if (input=="bradley is") {
-    message.channel.send("gay!");
-  }if (input.includes("i'm")){
+  if (input.includes("i'm")){
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
   if (input.includes("im")){
-    if ((input.charAt(input.indexOf("im")-1)!=" ")||(input.charAt(input.indexOf("im")+2)!=" ")||(input.charAt(input.indexOf("im")-1)!=""){
+    if ((input.charAt(input.indexOf("im")-1)!=" ")||(input.charAt(input.indexOf("im")+2)!=" ")||(input.charAt(input.indexOf("im")-1)!="")){
       return;
     }
       message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
 
-  
-
+  if (input=="bradley is") {
+    message.channel.send("gay!");
+  }
   if (input=="frank is") {
   	message.channel.send("trying to understand your English!");
   }
