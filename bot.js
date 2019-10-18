@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on("message", (message) => {
-  String input=message.content.toLowerCase();
+  var input=message.content.toLowerCase();
   if (message.author.bot) {return;}
   if (input=="bradley is") {
     message.channel.send("gay!");
@@ -31,7 +31,7 @@ client.on("message", (message) => {
     message.channel.send("sike");
   }
   if (input=="charlie is") {
-    message.channel.send("dominating the world with his forehead")
+    message.channel.send("dominating the world with his forehead");
   }
 })
 ;
