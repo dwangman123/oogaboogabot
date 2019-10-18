@@ -9,10 +9,10 @@ client.on("message", (message) => {
   var input=message.content.toLowerCase();
 
   if (message.author.bot) {return;}
-  if (input.includes(" i'm "){
+  if (input.includes(" i'm ")){
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("i'm"))) + ", I'm daddy");
   }
-  if ( input.includes(" im ") {
+  if ( input.includes(" im ")) {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("im"))) + ", I'm daddy");
   }
 
