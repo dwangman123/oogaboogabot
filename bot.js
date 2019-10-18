@@ -7,12 +7,14 @@ client.on('ready', () => {
 
 client.on("message", (message) => {
   var input=message.content.toLowerCase();
+  var letters=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
   if (message.author.bot) {return;}
   if (input.includes("i'm")){
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
   if (input.includes("im")){
-    if ((input.indexOf("im")==1)||((input.charAt(input.indexOf("im")-1)!=" ")&&(input.charAt(input.indexOf("im")+2)!=" "))){
+    if ( (letters[input.charAt(input.indexOf("im")+2)]>=0)||(letters[input.charAt(input.indexOf("im")-1)]>=0){
       message.channel.send("hi i have gotten");
       return;
     }
