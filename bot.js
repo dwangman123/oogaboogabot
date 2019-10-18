@@ -12,9 +12,10 @@ client.on("message", (message) => {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
   if (input.includes("im")){
-    /*if ((input.charAt(input.indexOf("im")-1)!=" ")||(input.charAt(input.indexOf("im")+2)!=" ")||(input.charAt(input.indexOf("im")-1)!="")){
+    if ((input.charAt(input.indexOf("im")-1)!=" ")||(input.charAt(input.indexOf("im")+2)!=" ")||(input.charAt(input.indexOf("im")-1)!="")){
+      message.channel.send("hi i have gotten");
       return;
-    }*/
+    }
       message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
 
