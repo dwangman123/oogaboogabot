@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -6,22 +6,34 @@ client.on('ready', () => {
 });
 
 client.on("message", (message) => {
+  String input=message.content.toLowerCase();
   if (message.author.bot) {return;}
-  if (message.content.toLowerCase()=="bradley is") {
+  if (input=="bradley is") {
     message.channel.send("gay!");
-  }if ((message.content.toLowerCase().includes("i'm"))||(message.content.toLowerCase().includes("im"))){
-    message.channel.send("Hi" + message.content.substring(message.content.toLowerCase().indexOf(" ", message.content.toLowerCase().indexOf("m"))) + ", I'm daddy");
+  }if (input.includes("i'm")){
+    message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
-  if (message.content.toLowerCase()=="frank is") {
+  if (input.includes("im")){
+    if ((input.charAt(input.indexOf("im")-1)!=" ")||(input.charAt(input.indexOf("im")+2)!=" ")){
+      return;
+    }
+      message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
+  }
+
+  
+
+  if (input=="frank is") {
   	message.channel.send("trying to understand your English!");
   }
-  if (message.content.toLowerCase()=="brendan is") {
+  if (input=="brendan is") {
   	message.channel.send("a cool, smart, funny, handsome, witty, mature, awesome guy");
-  	setTimeout(function(){
-  		message.channel.send("sike");
-  	},4000);
+    message.channel.send("...");
+    message.channel.send("sike");
   }
-});
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
+  if (input=="charlie is") {
+    message.channel.send("dominating the world with his forehead")
+  }
+})
+;
+    
+client.login(process.env.BOT_TOKEN);
