@@ -14,7 +14,7 @@ client.on("message", (message) => {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("m"))) + ", I'm daddy");
   }
   if (input.includes("im")){
-    if ( (letters[input.charAt(input.indexOf("im")+2)]>=0)||(letters[input.charAt(input.indexOf("im")-1)]>=0){
+    if ( (letters[input.charAt(input.indexOf("im")+2)]>=0)||(letters[input.charAt(input.indexOf("im")-1)]>=0)){
       message.channel.send("hi i have gotten");
       return;
     }
