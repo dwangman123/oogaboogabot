@@ -9,7 +9,7 @@ client.on("message", (message) => {
   var input=message.content.toLowerCase();
 
   if (message.author.bot) {return;}
-  if (input.includes(" i'm ")){
+  if (( input.includes(" i'm ")) || ((input.indexOf("i'm"))==0&&(input.charAt(input.indexOf("i'm")+2)==" "))){
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("i'm"))) + ", I'm daddy");
   }
   if (( input.includes(" im ")) || ((input.indexOf("im"))==0&&(input.charAt(input.indexOf("im")+2)==" "))) {
