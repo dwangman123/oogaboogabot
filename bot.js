@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-import desc from "member_info.js";
+import { desc } from "member_info.js";
 
 client.on('ready', () => {
     console.log('I am ready!');
