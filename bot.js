@@ -12,10 +12,10 @@ client.on("message", (message) => {
   if (input.includes(" i'm ")){
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("i'm"))) + ", I'm daddy");
   }
-  if ( input.includes(" im ")) {
+  if (( input.includes(" im ")) || ((input.indexOf("im"))==0&&(input.charAt(input.indexOf("im")+2)==" "))) {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("im"))) + ", I'm daddy");
   }
-  if (input=="!info@") {
+  if (input.includes("!info@")) {
     var name=input.substring(input.indexOf("@")+1);
     message.channel.send("hi this has worked");
     message.channel.send(name);
