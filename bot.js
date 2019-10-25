@@ -16,10 +16,9 @@ client.on("message", (message) => {
   if (( input.includes(" im ")) || ((input.indexOf("im"))==0&&(input.charAt(input.indexOf("im")+2)==" "))) {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("im"))) + ", I'm daddy");
   }
-  if (input.includes("!info")) {
+  if (input.includes("!getinfo")) {
       var name = input.substring(input.indexOf("o") + 2);
       var desc=name+"1";
-      console.log(desc);
       var curr=name+"2";
     message.channel.send("Description: "+info[desc]);
     message.channel.send("Currently... "+info[curr]);
