@@ -1,6 +1,8 @@
 module.exports  = {
 	charlie1: "Chob 'Megamind' He is a hulking 6 ft monster who loves getting his pecs touched and coconut water",
 	charlie2: "dominating the world with his forehead",
-	brendan1: "Brendan 'Degenerate' Lin towers at 3 ft, commonly seen yelling the monkey noises while slapping the bois' butts",
-	brendan2: "yelling at his dogshit laptop for 'bad' League teammates"
+	brendan1: "Brendan 'Degenerate' Lin towers at 3 ft, commonly seen yelling monkey noises while slapping the bois' butts",
+	brendan2: "yelling at his dogshit laptop for 'bad' League teammates",
+	bradley1: "Bradley 'gay' Liu is an Asian hypebeast who buys fake Supreme from China and spends more time on Tik Tok than breathing",
+	bradley2: "running it down with Brendan while biting his necklace"
 };
