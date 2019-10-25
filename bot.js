@@ -17,9 +17,11 @@ client.on("message", (message) => {
     message.channel.send("Hi" + message.content.substring(input.indexOf(" ", input.indexOf("im"))) + ", I'm daddy");
   }
   if (input.includes("!info")) {
-    var name=input.substring(input.indexOf("o")+1);
-      message.channel.send("hi this has worked");
-      message.channel.send(info.Charlie1);
+      var name = input.substring(input.indexOf("o") + 1);
+      var desc=name+"1";
+      var curr=name+"2";
+    message.channel.send("Description: "+info.desc);
+    message.channel.send("Currently: "+info.curr);
   }
   if (input=="bradley is") {
     message.channel.send("gay!");
