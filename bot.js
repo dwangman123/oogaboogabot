@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const info = require('member_info.js');
+var info = require('./member_info.js');
 
 client.on('ready', () => {
     console.log('I am ready!');
