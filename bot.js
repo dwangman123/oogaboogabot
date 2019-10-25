@@ -21,7 +21,7 @@ client.on("message", (message) => {
       var desc=name+"1";
       console.log(desc);
       var curr=name+"2";
-    message.channel.send("Description: "+info.desc);
+    message.channel.send("Description: "+info.charlie1);
     message.channel.send("Currently... "+info.curr);
   }
   if (input=="bradley is") {
