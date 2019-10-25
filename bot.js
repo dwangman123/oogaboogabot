@@ -21,22 +21,14 @@ client.on("message", (message) => {
       var desc=name+"1";
       var curr=name+"2";
     message.channel.send("Description: "+info[desc]);
-    message.channel.send("Currently... "+info[curr]);
+    message.channel.send("Currently ... "+info[curr]);
   }
-  if (input=="bradley is") {
-    message.channel.send("gay!");
+  if (input=="is bradley ") {
+    message.channel.send("gay? yes");
   }
   if (input=="frank is") {
   	message.channel.send("trying to understand your English!");
   }
-  if (input=="brendan is") {
-  	message.channel.send("a cool, smart, funny, handsome, witty, mature, awesome guy");
-    message.channel.send("...");
-    message.channel.send("sike");
-  }
-  if (input=="charlie is") {
-    message.channel.send("dominating the world with his forehead");
-  } 
   if (input=="dharmil is") {
 
   }
