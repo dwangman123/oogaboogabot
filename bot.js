@@ -18,8 +18,8 @@ client.on("message", (message) => {
   }
   if (input.includes("!info")) {
     var name=input.substring(input.indexOf("o")+1);
-    message.channel.send("hi this has worked");
-    message.channel.send(desc.Charlie1);
+      message.channel.send("hi this has worked");
+      message.channel.send(info);
   }
   if (input=="bradley is") {
     message.channel.send("gay!");
