@@ -23,7 +23,7 @@ client.on("message", (message) => {
     message.channel.send("Description: "+info[desc]);
     message.channel.send("Currently ... "+info[curr]);
   }
-  if (input=="is bradley ") {
+  if (input=="is bradley") {
     message.channel.send("gay? yes");
   }
   if (input=="frank is") {
