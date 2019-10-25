@@ -7,6 +7,8 @@ module.exports  = {
 	bradley2: "running it down with Brendan while biting his necklace",
 	nikhil1: "Nikhil \"Free poke guy\" Kulkarni is the whitest Indian to exist but still retains his brown side as a stick",
 	nikhil2: "going to speech and debate for no reason",
-	calvin1: "Calvin \"Join Pf\" Xie is infamous for his internship at A VENTURE CAPITALIST FIRM and drinking too much coffee",
-	calvin2: "ditching class"
+	calvin1: "Calvin \"S&D is for intellectuals\" Xie is infamous for his internship at A VENTURE CAPITALIST FIRM and drinking too much coffee",
+	calvin2: "ditching class",
+	frank1: "Frank \"Junchu Yan\" Yan is an immigrant."
+	frank2: "running from the ICE"
 };

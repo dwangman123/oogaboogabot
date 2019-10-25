@@ -26,12 +26,6 @@ client.on("message", (message) => {
   if (input=="is bradley") {
     message.channel.send("gay? yes");
   }
-  if (input=="frank is") {
-  	message.channel.send("trying to understand your English!");
-  }
-  if (input=="dharmil is") {
-
-  }
 })
 ;
     
