@@ -19,9 +19,10 @@ client.on("message", (message) => {
   if (input.includes("!info")) {
       var name = input.substring(input.indexOf("o") + 2);
       var desc=name+"1";
+      console.log(info.desc);
       var curr=name+"2";
     message.channel.send("Description: "+info.desc);
-    message.channel.send("Currently: "+info.curr);
+    message.channel.send("Currently... "+info.curr);
   }
   if (input=="bradley is") {
     message.channel.send("gay!");
