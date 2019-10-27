@@ -10,7 +10,6 @@ module.exports  = {
 	calvin1: "Calvin \"S&D is for intellectuals\" Xie is infamous for his internship at A VENTURE CAPITALIST FIRM and drinking too much coffee",
 	calvin2: "ditching class",
 	frank1: "Frank \"Junchu Yan\" Yan is a Chinese immigrant who frequently yells derogatory slurs when playing the dead game Hearthstone.",
-	frank2: "在跑 from the ICE",
-	\\thomas,eric,dennis, evan, dharmil
+	frank2: "在跑 from the ICE"
 
 };
