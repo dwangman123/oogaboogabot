@@ -34,7 +34,7 @@ client.on("message", (message) => {
     message.channel.send(user.nick+"'s penis:");
     var size=Math.floor(Math.random() * 6) + 1;
     var shaft="";
-    for (int i=0;i<size;i++) {
+    for (var i=0;i<size;i++) {
       shaft=shaft+"=";
     }
     message.channel.send("8"+shaft+"D");
