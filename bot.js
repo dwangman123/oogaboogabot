@@ -52,6 +52,20 @@ client.on("message", (message) => {
     }
     message.channel.send("8"+shaft+"D");
   }
+
+  //gay machine
+  if (input.includes("!howgay")){
+    if(!message.mentions.members.first()){
+      return message.channel.send("Please mention someone on the server");
+    }
+    user=message.mentions.members.first();
+    message.channel.send("gay r8 machine");
+    if (user.user.discriminator.equals("8860")){
+      return message.channel.send(user.displayName+"is 200% gay");
+    }
+    var rating=Math.floor(Math.random()*100)+1;
+    message.channel.send(user.displayName+"is"+rating+"% gay");
+  }
 })
 ;
     
