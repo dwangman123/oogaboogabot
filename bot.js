@@ -43,9 +43,9 @@ client.on("message", (message) => {
       return message.channel.send("Please mention someone on the server");
     }
     message.channel.send("peepee size machine");
-    let user=message.mentions.members.first();
+    var user=message.mentions.members.first();
     message.channel.send(user.displayName+"'s peepee:");
-    var size=Math.floor(Math.random() * 6) + 1;
+    let size=Math.floor(Math.random() * 6) + 1;
     var shaft="";
     for (var i=0;i<size;i++) {
       shaft=shaft+"=";
@@ -58,7 +58,7 @@ client.on("message", (message) => {
     if(!message.mentions.members.first()){
       return message.channel.send("Please mention someone on the server");
     }
-    let user=message.mentions.members.first();
+    var user=message.mentions.members.first();
     message.channel.send("gay r8 machine");
     if (user.user.discriminator==("8860")){
       return message.channel.send(user.displayName+" is 200% gay");
