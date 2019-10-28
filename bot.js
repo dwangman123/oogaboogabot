@@ -68,7 +68,7 @@ client.on("message", (message) => {
   }
 
   //coin flip
-  if(input.inludes("!flipcoin")) {
+  if(input.includes("!flipcoin")) {
     var chance=Math.floor(Math.random()*2)+1;
     if (chance==1){
       message.channel.send("heads");
