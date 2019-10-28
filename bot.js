@@ -66,6 +66,17 @@ client.on("message", (message) => {
     var rating=Math.floor(Math.random()*100)+1;
     message.channel.send(user.displayName+" is "+rating+"% gay");
   }
+
+  //coin flip
+  if(input.inludes("!flipcoin")) {
+    var chance=Math.floor(Math.random()*2)+1;
+    if (chance==1){
+      message.channel.send("heads");
+    }
+    else{
+      message.channel.send("tails");
+    }
+  }
 })
 ;
     
