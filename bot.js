@@ -31,7 +31,7 @@ client.on("message", (message) => {
   }
   if (input="!penis"){
     user=message.mentions.members.first();
-    message.channel.send("works!");
+    message.channel.send(user.user+"'s penis:");
   }
 })
 ;
