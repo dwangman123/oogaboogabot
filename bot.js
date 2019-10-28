@@ -64,7 +64,7 @@ client.on("message", (message) => {
       return message.channel.send(user.displayName+"is 200% gay");
     }
     var rating=Math.floor(Math.random()*100)+1;
-    message.channel.send(user.displayName+" is"+rating+"% gay");
+    message.channel.send(user.displayName+" is "+rating+"% gay");
   }
 })
 ;
