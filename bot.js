@@ -29,9 +29,15 @@ client.on("message", (message) => {
   if (input=="!poop"){
     message.channel.send("░░░░░░░░░░░█▀▀░░█░░░░░░\n░░░░░░▄▀▀▀▀░░░░░█▄▄░░░░\n░░░░░░█░█░░░░░░░░░░▐░░░\n░░░░░░▐▐░░░░░░░░░▄░▐░░░\n░░░░░░█░░░░░░░░▄▀▀░▐░░░\n░░░░▄▀░░░░░░░░▐░▄▄▀░░░░\n░░▄▀░░░▐░░░░░█▄▀░▐░░░░░\n░░█░░░▐░░░░░░░░▄░▌░░░░░\n░░░█▄░░▀▄░░░░▄▀█░▌░░░░░\n░░░▌▐▀▀▀░▀▀▀▀░░█░▌░░░░░\n░░▐▌▐▄░░▀▄░░░░░█░█▄▄░░░\n░░░▀▀░▄███▄▄░░░▀▄▄▄▀░░░\n░░░░░░░░░░░░░░░░░░░░░░░");
   }
-  if (input="!penis"){
+  if (input=="!penis"){
     user=message.mentions.members.first();
-    message.channel.send(user.user+"'s penis:");
+    message.channel.send(user.nick+"'s penis:");
+    var size=Math.floor(Math.random() * 6) + 1;
+    var shaft="";
+    for (int i=0;i<size;i++) {
+      shaft=shaft+"=";
+    }
+    message.channel.send("8"+shaft+"D");
   }
 })
 ;
