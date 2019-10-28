@@ -29,9 +29,9 @@ client.on("message", (message) => {
   if (input=="!poop"){
     message.channel.send("░░░░░░░░░░░█▀▀░░█░░░░░░\n░░░░░░▄▀▀▀▀░░░░░█▄▄░░░░\n░░░░░░█░█░░░░░░░░░░▐░░░\n░░░░░░▐▐░░░░░░░░░▄░▐░░░\n░░░░░░█░░░░░░░░▄▀▀░▐░░░\n░░░░▄▀░░░░░░░░▐░▄▄▀░░░░\n░░▄▀░░░▐░░░░░█▄▀░▐░░░░░\n░░█░░░▐░░░░░░░░▄░▌░░░░░\n░░░█▄░░▀▄░░░░▄▀█░▌░░░░░\n░░░▌▐▀▀▀░▀▀▀▀░░█░▌░░░░░\n░░▐▌▐▄░░▀▄░░░░░█░█▄▄░░░\n░░░▀▀░▄███▄▄░░░▀▄▄▄▀░░░\n░░░░░░░░░░░░░░░░░░░░░░░");
   }
-  if (input=="!penis"){
+  if (input.includes("!penis")){
     user=message.mentions.members.first();
-    message.channel.send(user.nick+"'s penis:");
+    message.channel.send(user.displayName+"'s penis:");
     var size=Math.floor(Math.random() * 6) + 1;
     var shaft="";
     for (var i=0;i<size;i++) {
