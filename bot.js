@@ -68,7 +68,7 @@ client.on("message", (message) => {
   }
 
   //coin flip
-  if(input.includes("!flipcoin")) {
+  if(input.includes("!coinflip")) {
     var chance=Math.floor(Math.random()*2)+1;
     if (chance==1){
       message.channel.send("heads");
@@ -76,6 +76,12 @@ client.on("message", (message) => {
     else{
       message.channel.send("tails");
     }
+  }
+
+  //dice roll
+  if (input.includes("!diceroll")) {
+    var chance=Math.floor(Math.random()*6)+1;
+    message.channel.send(chance);
   }
 })
 ;
