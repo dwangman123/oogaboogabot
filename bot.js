@@ -83,6 +83,11 @@ client.on("message", (message) => {
     var chance=Math.floor(Math.random()*6)+1;
     message.channel.send(chance);
   }
+
+  //fake dice roll
+  if (input.includes("!flipcoin")){
+    message.channel.send("heads");
+  }
 })
 ;
     
