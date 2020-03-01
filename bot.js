@@ -29,7 +29,7 @@ client.on("message", (message) => {
 
   //bradley :D
   if (input=="bradley is") {
-    message.channel.send("yes");
+    message.channel.send("gay");
   }
 
   //poop machine
