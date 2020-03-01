@@ -28,8 +28,8 @@ client.on("message", (message) => {
   }
 
   //bradley :D
-  if (input=="is bradley") {
-    message.channel.send("gay? yes");
+  if (input=="bradley is") {
+    message.channel.send("yes");
   }
 
   //poop machine
@@ -84,7 +84,7 @@ client.on("message", (message) => {
     message.channel.send(chance);
   }
 
-  //fake dice roll
+  //fake coin flip
   if (input.includes("!flipcoin")){
     message.channel.send("heads");
   }
