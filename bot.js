@@ -61,7 +61,7 @@ client.on("message", (message) => {
     }
     var user = message.mentions.users.first();
     message.channel.send("gay r8 machine");
-    if (user.discriminator==("8860")){
+    if (user.discriminator==("3177")){
       return message.channel.send(user.username+" is 200% gay");
     }
     var rating=Math.floor(Math.random()*100)+1;
