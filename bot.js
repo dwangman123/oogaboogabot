@@ -94,7 +94,7 @@ client.on("message", (message) => {
   if (input.includes("!flipcoin")){
     message.channel.send("heads");
   }
-  if (input.equals("!coinfli")){
+  if (input =="!coinfli"){
     prevM = true;
   }
 })
