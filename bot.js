@@ -59,7 +59,7 @@ client.on("message", (message) => {
     if(!message.mentions.users.size){
       return message.channel.send("Please mention someone on the server");
     }
-    var user = message.mentions.members.first();
+    var user = message.mentions.users.first();
     message.channel.send("gay r8 machine");
     if (user.discriminator==("8860")){
       return message.channel.send(user.displayName+" is 200% gay");
