@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var info = require('./member_info.js');
+var prevM = false;
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -58,7 +59,7 @@ client.on("message", (message) => {
     if(!message.mentions.members.first()){
       return message.channel.send("Please mention someone on the server");
     }
-    var user=message.mentions.members.first();
+    var user = message.mentions.members.first();
     message.channel.send("gay r8 machine");
     if (user.user.discriminator==("8860")){
       return message.channel.send(user.displayName+" is 200% gay");
@@ -69,6 +70,10 @@ client.on("message", (message) => {
 
   //coin flip
   if(input.includes("!coinflip")) {
+    if (prevM){
+      prevM = false;
+      message.channel.send("heads");
+    }
     var chance=Math.floor(Math.random()*2)+1;
     if (chance==1){
       message.channel.send("heads");
@@ -87,6 +92,9 @@ client.on("message", (message) => {
   //fake coin flip
   if (input.includes("!flipcoin")){
     message.channel.send("heads");
+  }
+  if (input.includes("!coinfli")){
+    prevM = true;
   }
 })
 ;
