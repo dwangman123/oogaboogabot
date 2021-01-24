@@ -40,7 +40,7 @@ client.on("message", (message) => {
 
   //Peepee size machine
   if (input.includes("!peepee")){
-    if(!message.mentions.members.size()){
+    if(!message.mentions.users.size()){
       return message.channel.send("Please mention someone on the server");
     }
     message.channel.send("peepee size machine");
@@ -56,7 +56,7 @@ client.on("message", (message) => {
 
   //gay machine
   if (input.includes("!howgay")){
-    if(!message.mentions.members.size()){
+    if(!message.mentions.users.size()){
       return message.channel.send("Please mention someone on the server");
     }
     var user = message.mentions.members.first();
