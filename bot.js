@@ -44,8 +44,8 @@ client.on("message", (message) => {
       return message.channel.send("Please mention someone on the server");
     }
     message.channel.send("peepee size machine");
-    var user=message.mentions.members.first();
-    message.channel.send(user.displayName+"'s peepee:");
+    var user=message.mentions.users.first();
+    message.channel.send(user.username+"'s peepee:");
     let size=Math.floor(Math.random() * 6) + 1;
     var shaft="";
     for (var i=0;i<size;i++) {
@@ -62,10 +62,10 @@ client.on("message", (message) => {
     var user = message.mentions.users.first();
     message.channel.send("gay r8 machine");
     if (user.discriminator==("8860")){
-      return message.channel.send(user.displayName+" is 200% gay");
+      return message.channel.send(user.username+" is 200% gay");
     }
     var rating=Math.floor(Math.random()*100)+1;
-    message.channel.send(user.displayName+" is "+rating+"% gay");
+    message.channel.send(user.username+" is "+rating+"% gay");
   }
 
   //coin flip
