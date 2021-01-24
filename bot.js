@@ -40,7 +40,7 @@ client.on("message", (message) => {
 
   //Peepee size machine
   if (input.includes("!peepee")){
-    if(!message.mentions.members.first()){
+    if(!message.mentions.members.size()){
       return message.channel.send("Please mention someone on the server");
     }
     message.channel.send("peepee size machine");
@@ -56,7 +56,7 @@ client.on("message", (message) => {
 
   //gay machine
   if (input.includes("!howgay")){
-    if(!message.mentions.members.first()){
+    if(!message.mentions.members.size()){
       return message.channel.send("Please mention someone on the server");
     }
     var user = message.mentions.members.first();
@@ -73,6 +73,7 @@ client.on("message", (message) => {
     if (prevM){
       prevM = false;
       message.channel.send("heads");
+      return;
     }
     var chance=Math.floor(Math.random()*2)+1;
     if (chance==1){
@@ -93,7 +94,7 @@ client.on("message", (message) => {
   if (input.includes("!flipcoin")){
     message.channel.send("heads");
   }
-  if (input.includes("!coinfli")){
+  if (input.equals("!coinfli")){
     prevM = true;
   }
 })
