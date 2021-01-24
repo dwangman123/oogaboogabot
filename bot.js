@@ -40,7 +40,7 @@ client.on("message", (message) => {
 
   //Peepee size machine
   if (input.includes("!peepee")){
-    if(!message.mentions.users.size{
+    if(!message.mentions.users.size){
       return message.channel.send("Please mention someone on the server");
     }
     message.channel.send("peepee size machine");
