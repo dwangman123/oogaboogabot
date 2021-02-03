@@ -13,6 +13,6 @@ module.exports  = {
 	frank2: "在跑 from the ICE",
 	evan1: "Evan \"No memes in general\" Ji impressively runs it down at every video game and is adamant against sucking a dick for a million buckaroos.",
 	evan2: "simping for Allison, Erica, and Soapy",
-	thomas1: "Thomas \“Big PeePee Man\” Yang is a world-class contemporary artist, known for his demonic, borderline illegal drawings and cannot resist saying \“poopcock\” every 10 seconds. ",
-	thomas2: "trying to find another asian in Indiana(where?XD)"
+	thomas1: "Thomas \“Big PeePee Man\” Yang is a world-class contemporary artist, known for his demonic, borderline illegal drawings/memes and cannot resist saying \“poopcock\” every 10 seconds. ",
+	thomas2: "trying to find another asian in Indianas"
 };
