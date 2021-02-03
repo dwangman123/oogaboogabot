@@ -11,6 +11,6 @@ module.exports  = {
 	calvin2: "ditching class",
 	frank1: "Frank \"Junchu Yan\" Yan is a Chinese immigrant who frequently yells derogatory slurs when playing the dead game Hearthstone.",
 	frank2: "在跑 from the ICE",
-	evan1: "Evan \"No memes in general\" Ji is impressively untalented at every video game and is adamant against sucking a dick for a million buckaroos.",
+	evan1: "Evan \"No memes in general\" Ji impressively runs it down at every video game and is adamant against sucking a dick for a million buckaroos.",
 	evan2: "simping for Allison, Erica, and Soapy",
 };
