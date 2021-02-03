@@ -50,7 +50,7 @@ client.on("message", (message) => {
     message.channel.send("peepee size machine");
     var user=message.mentions.users.first();
     message.channel.send(user.username+"'s peepee:");
-    let size=Math.floor(Math.random() * 6) + 1;
+    let size=parseInt(user.discriminator) % 7;
     var shaft="";
     for (var i=0;i<size;i++) {
       shaft=shaft+"=";
