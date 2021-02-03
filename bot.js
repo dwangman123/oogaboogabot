@@ -4,7 +4,7 @@ var info = require('./member_info.js');
 var prevM = false;
 
 client.on('ready', () => {
-    console.log('I am ready!');
+  console.log('I am ready!');
 });
 
 client.on("message", (message) => {
@@ -21,11 +21,15 @@ client.on("message", (message) => {
 
   //get info of members
   if (input.includes("!getinfo")) {
-      var name = input.substring(input.indexOf("o") + 2);
-      var desc=name+"1";
-      var curr=name+"2";
-    message.channel.send("Description: "+info[desc]);
-    message.channel.send("Currently ... "+info[curr]);
+    var name = input.substring(input.indexOf("o") + 2);
+    var desc=name+"1";
+    var curr=name+"2";
+    if (!info[desc]){
+      message.channel.send("Sorry, this user's information has not been added yet!");
+    }else{
+      message.channel.send("Description: "+info[desc]);
+      message.channel.send("Currently ... "+info[curr]);
+    }
   }
 
   //bradley :D
@@ -99,5 +103,5 @@ client.on("message", (message) => {
   }
 })
 ;
-    
+
 client.login(process.env.BOT_TOKEN);
