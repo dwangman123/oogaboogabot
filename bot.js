@@ -68,7 +68,7 @@ client.on("message", (message) => {
     if (user.discriminator==("3177")){
       return message.channel.send(user.username+" is 200% gay");
     }
-    var rating=Math.floor(Math.random()*100)+1;
+    var rating=parseInt(user.discriminator) % 100;
     message.channel.send(user.username+" is "+rating+"% gay");
   }
 
