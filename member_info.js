@@ -14,5 +14,7 @@ module.exports  = {
 	evan1: "Evan \"No memes in general\" Ji impressively runs it down at every video game and is adamant against sucking a dick for a million buckaroos.",
 	evan2: "simping for Allison, Erica, and Soapy",
 	thomas1: "Thomas \“Big PeePee Man\” Yang is a world-class contemporary artist, known for his demonic, borderline illegal drawings/memes and cannot resist saying \“poopcock\” every 10 seconds. ",
-	thomas2: "trying to find another asian in Indianas"
+	thomas2: "trying to find another asian in Indiana",
+	eric1: "Eric \“Teemo is so hot\” Yin is an e-boy furry who is perma S+ tier weird and nearly perma-d from the server for his AIDS-inducing jokes",
+	eric2: "playing TFT while complaining about too much work"
 };
