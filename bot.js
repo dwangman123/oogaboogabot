@@ -87,9 +87,7 @@ client.on("message", (message) => {
       message.channel.send("tails");
     }
   }
-  if (input.includes("!coinfIip")){
-    message.channel.send("tails");
-  }
+  
   //dice roll
   if (input.includes("!diceroll")) {
     var chance=Math.floor(Math.random()*6)+1;
@@ -102,6 +100,10 @@ client.on("message", (message) => {
   }
   if (input =="!coinfli"||input=="pog"){
     prevM = true;
+  }
+  if (input.includes("!coinfIip")){
+    console.log('check');
+    message.channel.send("tails");
   }
 })
 ;
