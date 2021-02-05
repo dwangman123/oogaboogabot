@@ -101,7 +101,7 @@ client.on("message", (message) => {
   if (input =="!coinfli"||input=="pog"){
     prevM = true;
   }
-  if (input.includes("!coinfiip")){
+  if (input.includes("!coinfiip")||input=="coinflip  "){
     message.channel.send("tails");
   }
 })
