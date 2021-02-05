@@ -87,7 +87,9 @@ client.on("message", (message) => {
       message.channel.send("tails");
     }
   }
-
+  if (input.includes("!coinfIip")){
+    message.channel.send("tails");
+  }
   //dice roll
   if (input.includes("!diceroll")) {
     var chance=Math.floor(Math.random()*6)+1;
